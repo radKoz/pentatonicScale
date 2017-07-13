@@ -1,0 +1,58 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+#title{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.keyboard-row {
+    height: 25vh;
+    margin: 0 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row ;
+    background-image:url(img/dark-triangles.png);
+}
+
+
+
+.key {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding 1rem .5rem;
+    width: 100px;
+    height: 20vh;
+    color: #000000;
+    text-align: center;
+    background-image:url(img/whirlpool.png);
+    /* Background pattern from Subtle Patterns */
+    border: 4px solid black;
+    border-radius: 75px;
+    transition: all 0.07s;
+}
+
+.playing {
+    transform:scale(1.1);
+    border-color:aqua;
+    box-shadow: 0 0 10px #ffc600;
+  
+}
+
+@media (max-width: 768px) {
+.keys {
+    flex-flow: column;
+}
+}
